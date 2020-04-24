@@ -48,18 +48,16 @@ function GameList() {
 
       return (
         <>
-          <div key={result.id} className="gameCard container-fluid row">
-
-            <div className="col">
-              <h1 className="gameText">{result.name}</h1>
-              <img src={result.background_image} alt={result.name} />
-              <p className="gameText"><b>Rating: </b>{result.rating}</p>
-              <p className="gameText"><b>Release date: </b>{result.released}</p>
-            </div>
-            <div className="col">
-              <h1 className="gameText">{result.name}</h1>
-              <p className="gameText"><b>Rated top </b>{result.rating_top}</p>
-              <a href={href}>Click this link for more information about {result.name}.</a>
+          <div className="row">
+            <div key={result.id} className="gameCard col-sm-4">
+              <div className="">
+                <img src={result.background_image} alt={result.name} />
+                <h1 className="gameText">{result.name}</h1>
+                <p className="gameText"><b>Rated top </b>{result.rating_top}</p>
+                <p className="gameText"><b>Rating: </b>{result.rating}</p>
+                <p className="gameText"><b>Release date: </b>{result.released}</p>
+                <a href={href}>Click for more information about {result.name}.</a>
+              </div>
             </div>
           </div>
 

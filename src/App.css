@@ -11,8 +11,9 @@ body{
 }
 
 .gameCard img {
-    width: 375px;
+    width: 300px;
     padding: 10px;
+    float: center;
 }
 
 .gameText {
@@ -21,11 +22,8 @@ body{
 }
 
 .searchBar{
-  width: 80%;
-  margin: 2%;
-}
-.container{
-  display: inline-block;
+  width: 96%;
+  margin: 5% 2%;
 }
 
 h1{
