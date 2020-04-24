@@ -48,29 +48,21 @@ function GameList() {
 
       return (
         <>
-          <div key={result.name} className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
-                <div className="gameCard">
-                  <div>
-                    <h1 className="gameText">{result.name}</h1>
-                    <img src={result.background_image} alt={result.name} />
-                    <p className="gameText"><b>Rating: </b>{result.rating}</p>
-                    <p className="gameText"><b>Release date: </b>{result.released}</p>
+          <div key={result.id} className="gameCard container-fluid row">
 
-                  </div>
-                </div>
-              </div>
-              <div className="flip-card-back">
-
-                <h1 className="gameText">{result.name}</h1>
-                <img src={result.background_image} alt={result.name} />
-                <p className="gameText"><b>Rated top </b>{result.rating_top}</p>
-                <a href={href}>Click this link for more information about {result.name}.</a>
-
-              </div>
+            <div className="col">
+              <h1 className="gameText">{result.name}</h1>
+              <img src={result.background_image} alt={result.name} />
+              <p className="gameText"><b>Rating: </b>{result.rating}</p>
+              <p className="gameText"><b>Release date: </b>{result.released}</p>
+            </div>
+            <div className="col">
+              <h1 className="gameText">{result.name}</h1>
+              <p className="gameText"><b>Rated top </b>{result.rating_top}</p>
+              <a href={href}>Click this link for more information about {result.name}.</a>
             </div>
           </div>
+
         </>
       );
     });
