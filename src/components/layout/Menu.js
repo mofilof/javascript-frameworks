@@ -1,17 +1,17 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { BrowserRouter as Router, NavLink } from "react-router-dom";
+
 
 function Menu() {
   return (
     <>
       <Navbar bg="dark" variant="dark" expand="lg">
         <Navbar.Collapse id="basic-navbar-nav">
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Nav className="mr-auto">
-          <Nav.Link  to="./Home" >Home</Nav.Link>
-            <Nav.Link to="./ContactPage">Contact</Nav.Link>
+            <Nav.Link to="./home" >Home</Nav.Link>
+            <Nav.Link to="./contact">Contact</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
