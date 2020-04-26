@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BASE_URL } from "../../constants/api";
 import SearchGames from "./SearchGames";
 
+
 function GameList() {
 
   const [results, setResults] = useState([]);
@@ -48,15 +49,18 @@ function GameList() {
 
       return (
         <>
-          <div className="row">
-            <div key={result.id} className="gameCard col-sm-4">
-              <div className="">
+          <div className="container">
+            <div key={result.id} className="gameCard row">
+              <div className="col-sm-4">
                 <img src={result.background_image} alt={result.name} />
+                <br></br>
+                <button><a href={href}>Read more here</a></button>
+              </div>
+              <div className="col-sm-8">
                 <h1 className="gameText">{result.name}</h1>
                 <p className="gameText"><b>Rated top </b>{result.rating_top}</p>
                 <p className="gameText"><b>Rating: </b>{result.rating}</p>
                 <p className="gameText"><b>Release date: </b>{result.released}</p>
-                <a href={href}>Click for more information about {result.name}.</a>
               </div>
             </div>
           </div>
