@@ -1,6 +1,7 @@
 body{
   background-color: black;
 }
+
 .gameCard {
     width: 400px;
     height: 530px;
@@ -23,7 +24,7 @@ body{
 
 .searchBar{
   width: 96%;
-  margin: 5% 2%;
+  margin: 7% 2% 2% 2%;
 }
 
 h1{
